@@ -1,0 +1,15 @@
+app:
+  name: bechtlewulff-poi-map-app
+  namespace: bechtlewulff
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/bechtlewulff-frontend
+  org: rhdh23-demo
+  name: bechtlewulff-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: bechtlewulff/poi-map-app
+  tag: latest
